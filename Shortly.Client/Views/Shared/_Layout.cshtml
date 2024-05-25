@@ -35,7 +35,7 @@
                             <a class="nav-link text-dark"
                                asp-area=""
                                asp-controller="Authentication"
-                               asp-action="Index">Users</a>
+                               asp-action="Users">Users</a>
                         </li>
                     </ul>
                 </div>
@@ -61,16 +61,17 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            <span class="mb-3 mb-md-0 text-muted">
-                <a class="text-muted" href="https://youtube.com">
-                    Subscribe to my YouTube Channel
-                </a>
-            </span>
-        </div>
-    </footer>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">
+                    <a class="text-muted" href="https://youtube.com">
+                        Subscribe to my YouTube Channel
+                    </a>
+                </span>
+            </div>            
+        </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
